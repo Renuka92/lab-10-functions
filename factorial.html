@@ -3,15 +3,19 @@
 <script>
 function factorial(n)
 {
+  var product;
 	for (var i=n-1; i>=1; i=i-1){
-		var n=(n*i);	
+		n=(n*i);
+		product=n;	
 	}
-	console.log(n);
-	return(n);
+	console.log(product);
+	return product;
 }
 
-n=parseInt(prompt("Number please..."));
-factorial(n)
+////////
+
+num=parseInt(prompt("Number please..."));
+product = factorial(num)
 
 </script>
 </body>
